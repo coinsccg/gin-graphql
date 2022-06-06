@@ -23,6 +23,9 @@ input NewPeople {
   userId: String!
 }
 
+scalar Upload
+
 type Mutation {
+  singleUpload(file: Upload!): Boolean!
   createPeople(input: NewPeople!): People!
 }
