@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "6058e6e1-cba9-4969-b885-0b4ab38642a7",
+		"name": "graphql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21319550"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/graphql",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "operations",
+							"value": "{\"query\": \"mutation($file: Upload!) {singleUpload(file: $file)}\",\"variables\": {\"file\": null}}",
+							"type": "text"
+						},
+						{
+							"key": "map",
+							"value": "{\"0\":[\"variables.file\"]}",
+							"type": "text"
+						},
+						{
+							"key": "0",
+							"type": "file",
+							"src": "/C:/Users/chunde01/Desktop/222.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
